@@ -3,7 +3,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env server.js",
+    "start": "nodemon --env-file=.env server.js",
     "dev": "node --watch --env-file=.env server.js",
     "test": "vitest",
     "test:database": "vitest database",
@@ -16,7 +16,9 @@
     "#*": "./*.js"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.8.0",
     "express": "^5.1.0",
+    "nodemon": "^3.1.10",
     "pg": "^8.14.1"
   },
   "devDependencies": {

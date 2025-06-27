@@ -12,7 +12,7 @@ async function seedEmployees() {
 
   await createEmployee({name: faker.person.firstName(), birthday: faker.date.birthdate(), salary: faker.commerce.price({min: 32000, max: 100000, dec: 0})} )
   await createEmployee({name: faker.person.firstName(), birthday: faker.date.birthdate(), salary: faker.commerce.price({min: 32000, max: 100000, dec: 0})} )
-  await createEmployee({name: faker.person.firstName(), birthday: faker.date.birthdate(), salary: faker.commerce.price({min: 32000, max: 100000, dec: 0})} )
+  await createEmployee({name: `Change Employee`, birthday: `2025-12-20`, salary: faker.commerce.price({min: 32000, max: 100000, dec: 0})} )
   await createEmployee({name: faker.person.firstName(), birthday: faker.date.birthdate(), salary: faker.commerce.price({min: 32000, max: 100000, dec: 0})} )
   await createEmployee({name: faker.person.firstName(), birthday: faker.date.birthdate(), salary: faker.commerce.price({min: 32000, max: 100000, dec: 0})} )
   await createEmployee({name: faker.person.firstName(), birthday: faker.date.birthdate(), salary: faker.commerce.price({min: 32000, max: 100000, dec: 0})} )
